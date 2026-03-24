@@ -1,33 +1,32 @@
 !!com.compuware.ispw.wzzms.models.IspwRoot
 ispwApplication:
-  host: cwcc.compuware.com
+  host: cwcc.bmc.com
   port: 16196
-  runtimeConfig: ispw
+  runtimeConfig: iccga
   stream: GITDEMO1
   application: GITI
+  assignmentPrefix: GITI
+  sandbox: Y
   pathMappings:
-  - path: "**/Sources/**"
-    types:
-    - fileExtension: cbldb2
-      ispwType: COB
-      sql: 'Yes'
-  - path: "**/Sources/**"
+  - path: "**/Sources/CommonComponents/Progs"
     types:
     - fileExtension: cbl
       ispwType: COB
-  - path: "**/Sources/**"
+    - fileExtension: pli
+      ispwType: PLI
+  - path: "**/Sources/CommonComponents/Subs"
+    types:
+    - fileExtension: cbl
+      ispwType: COB
+    - fileExtension: pli
+      ispwType: PLI
+  - path: "**/Sources/CommonComponents/Jobs"
+    types:
+    - fileExtension: jcl
+      ispwType: JOB                        
+  - path: "**/Sources/CommonComponents/Copys"
     types:
     - fileExtension: cpy
       ispwType: COPY
-  - path: "**/Sources/**"
-    types:
     - fileExtension: incl
       ispwType: INCL
-  - path: "**/Sources/**"
-    types:
-    - fileExtension: jcl
-      ispwType: JOB
-  - path: "**/Sources/**"
-    types:
-    - fileExtension: pli
-      ispwType: PLI
