@@ -1,10 +1,10 @@
 @Library('GITDEMO_Shared_Lib@Git2IspwFts') _
 
-String hostCredentialsId    = '81655732-c61c-4c4d-9af8-694652809d11'                    /* Change to Jenkins credentials ID for Host userid/password            */
-String cesCredentialsId     = 'FBRCCV0_CES'                     /* Change to Jenkins credentials ID for CES token                       */
-String gitRepoUrl           = 'https://github.com/CPWRGIT/FBRCCV0.git'   /* Change "<repo>" to user specific repository name                     */
-String gitCredentialsId     = '1768efaa-35d9-4217-8b01-861a2b940d45'                     /* Change to Jenkins credentials ID for GitHub personal access token    */
-String ccRepo               = 'FBRCCV0.DEMO.CC.REPOSIT'                     /* Change to user specific code coverage repository                     */
+String hostCredentialsId    = '69a166f5-6ca8-4408-8db4-5a2943d43454'      /* Change to Jenkins credentials ID for Host userid/password            */
+String cesCredentialsId     = 'IBZKXM_CES                                 /* Change to Jenkins credentials ID for CES token                       */
+String gitRepoUrl           = 'https://github.com/MKOMORIZ/FBRCCV0.git'   /* Change "<repo>" to user specific repository name                     */
+String gitCredentialsId     = 'MKOMORIZ_Github'                           /* Change to Jenkins credentials ID for GitHub personal access token    */
+String ccRepo               = 'IBZKXM.DEMO.CC.REPOSIT'                    /* Change to user specific code coverage repository                     */
 
 git2Ispw(
     hostCredentialsId:    hostCredentialsId,
